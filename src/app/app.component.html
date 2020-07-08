@@ -3,6 +3,8 @@
     <div class="col-xs-12 col-sm-10 col-md-8 col-sm-offset-1 col-md-offset-2">
       <input type="text" [(ngModel)]="filteredStatus">
       <hr>
+      <button class="btn btn-primary" (click)="onAddServer()">Add Server</button><br><br>
+      <h3>App Status: {{ appStatus | async}}</h3>
       <ul class="list-group">
         <li
           class="list-group-item"
@@ -22,3 +24,4 @@
 </div>
 
 <!-- some pipes can accept parameters, like the date pipe, we add them after the : -->
+
